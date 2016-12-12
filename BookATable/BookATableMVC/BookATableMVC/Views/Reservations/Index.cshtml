@@ -1,0 +1,42 @@
+﻿@model BookATableMVC.ViewModels.Reservations.ReservationListViewModel
+@{
+    ViewBag.Title = "Index";
+}
+<div>
+    @Html.Partial("_FilterPartial", Model.Filter)
+</div>
+<p>
+
+    @Html.ActionLink("Create Reservation", "Edit", "Reservations", new { @class = " btn-lg btn-block" })
+
+</p>
+<table class="table">
+    <tr>
+        <th></th>
+    </tr>
+    <tr>
+        <th>PeopleCount</th>
+        <th>Comment</th>
+        <th>ReservationTime</th>
+        <th>Restaurant</th>
+
+    </tr>
+    @foreach (var item in Model.Items)
+    {
+        <tr>
+            <td>@item.PeopleCount</td>
+            <td>@item.Comment</td>
+            <td>@item.ReservationTime</td>
+            <td>@item.Restaurant.Name</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+
+    }
+</table>
+<div>
+    @Html.Partial("_PagerPartial", Model.Pager)
+</div>
+

@@ -1,0 +1,27 @@
+﻿@model BookATableMVC.ViewModels.Roles.RoleListViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Edit","Roles")
+</p>
+<table class="table">
+    <tr>
+        <th>Roles</th>
+    </tr>
+
+@foreach (var item in Model.Items) {
+    <tr>
+        <td>@item.Name</td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id})
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,83 @@
+﻿@model BookATableMVC.ViewModels.Reservations.ReservationAddEditViewModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+@if (Model.Id == 0)
+{
+    <h2>Add</h2>
+}
+else
+{<h2>Edit</h2> }
+
+@Styles.Render("~/Content/book-a-table-style")
+
+
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.UserId)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ReservationTime, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ReservationTime, new { htmlAttributes = new { @class = "dateTimePicker form-control ", @id = "datetimepicker" } })
+                @Html.ValidationMessageFor(model => model.ReservationTime, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PeopleCount, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PeopleCount, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PeopleCount, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Comment, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Comment, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Comment, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Restaurants, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.RestaurantId, Model.Restaurants, "please select..", new { @class = "form-control" })
+                @*<select name="Restaurants">
+                        @foreach (var item in Model.Restaurants)
+                        {
+                            <option value="@item.Value">@item.Text</option>
+                        }
+                    </select>*@
+                @*@Html.ValidationMessageFor(model => model.Restaurants, "", new { @class = "text-danger" })*@
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index", "Reservations", new { @class = " btn-lg btn-block" })
+</div>
+
+
+@Scripts.Render("~/Scripts/book-a-table-script")
+
+@using System.Web.Optimization

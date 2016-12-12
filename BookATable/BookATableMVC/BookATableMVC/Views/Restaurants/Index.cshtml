@@ -1,0 +1,56 @@
+﻿@model BookATableMVC.ViewModels.Restaurants.RestaurantListViewModel
+@{
+    ViewBag.Title = "Index";
+}
+<div>
+    @Html.Partial("_FilterPartial", Model.Filter)
+</div>
+@Html.ActionLink("Add New Restaurant", "Edit", "Restaurants", new { @class = " btn-lg btn-block" })
+<table class="table">
+    <tr>
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Capacity</th>
+        <th>Open Hour</th>
+        <th>Close Hour</th>
+        <th>Image</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var item in Model.Items)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Address</td>
+            <td>@item.Email</td>
+            <td>@item.Phone</td>
+            <td>@item.Capacity</td>
+            @if (item.OpenHour.HasValue && item.CloseHour.HasValue)
+            {
+                <td>@item.OpenHour.Value.ToShortTimeString()</td>
+                <td>@item.CloseHour.Value.ToShortTimeString()</td>
+            }
+            <td>
+                <div class="photo">
+                    <div class="center">
+
+                        <img class="photo" src="~/Uploads/@item.ImagePath" alt="Image" width="200" height="200" />
+                    </div>
+                </div>
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+
+
+
+            </td>
+        </tr>
+    }
+</table>
+<div>
+    @Html.Partial("_PagerPartial", Model.Pager)
+</div>

@@ -1,0 +1,33 @@
+C:\Users\User\Source\Repos\BookATable\BookATableMVC\BookATable.Service\bin\Debug\BookATable.Service.dll
+C:\Users\User\Source\Repos\BookATable\BookATableMVC\BookATable.Service\bin\Debug\BookATable.Service.pdb
+C:\Users\User\Source\Repos\BookATable\BookATableMVC\BookATable.Service\bin\Debug\DAL.dll
+C:\Users\User\Source\Repos\BookATable\BookATableMVC\BookATable.Service\bin\Debug\EntityFramework.dll
+C:\Users\User\Source\Repos\BookATable\BookATableMVC\BookATable.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Source\Repos\BookATable\BookATableMVC\BookATable.Service\bin\Debug\DAL.pdb
+C:\Users\User\Source\Repos\BookATable\BookATableMVC\BookATable.Service\bin\Debug\EntityFramework.xml
+C:\Users\User\Source\Repos\BookATable\BookATableMVC\BookATable.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Source\Repos\BookATable\BookATableMVC\BookATable.Service\obj\Debug\BookATable.Service.csprojResolveAssemblyReference.cache
+C:\Users\User\Source\Repos\BookATable\BookATableMVC\BookATable.Service\obj\Debug\BookATable.Service.dll
+C:\Users\User\Source\Repos\BookATable\BookATableMVC\BookATable.Service\obj\Debug\BookATable.Service.pdb
+C:\Users\Lenovo G530\Desktop\Нова папка (4)\BookATable\BookATable\BookATableMVC\BookATable.Service\bin\Debug\BookATable.Service.dll
+C:\Users\Lenovo G530\Desktop\Нова папка (4)\BookATable\BookATable\BookATableMVC\BookATable.Service\bin\Debug\BookATable.Service.pdb
+C:\Users\Lenovo G530\Desktop\Нова папка (4)\BookATable\BookATable\BookATableMVC\BookATable.Service\bin\Debug\DAL.dll
+C:\Users\Lenovo G530\Desktop\Нова папка (4)\BookATable\BookATable\BookATableMVC\BookATable.Service\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo G530\Desktop\Нова папка (4)\BookATable\BookATable\BookATableMVC\BookATable.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo G530\Desktop\Нова папка (4)\BookATable\BookATable\BookATableMVC\BookATable.Service\bin\Debug\DAL.pdb
+C:\Users\Lenovo G530\Desktop\Нова папка (4)\BookATable\BookATable\BookATableMVC\BookATable.Service\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo G530\Desktop\Нова папка (4)\BookATable\BookATable\BookATableMVC\BookATable.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo G530\Desktop\Нова папка (4)\BookATable\BookATable\BookATableMVC\BookATable.Service\obj\Debug\BookATable.Service.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo G530\Desktop\Нова папка (4)\BookATable\BookATable\BookATableMVC\BookATable.Service\obj\Debug\BookATable.Service.dll
+C:\Users\Lenovo G530\Desktop\Нова папка (4)\BookATable\BookATable\BookATableMVC\BookATable.Service\obj\Debug\BookATable.Service.pdb
+C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookATableMVC\BookATable.Service\bin\Debug\BookATable.Service.dll
+C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookATableMVC\BookATable.Service\bin\Debug\BookATable.Service.pdb
+C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookATableMVC\BookATable.Service\bin\Debug\DAL.dll
+C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookATableMVC\BookATable.Service\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookATableMVC\BookATable.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookATableMVC\BookATable.Service\bin\Debug\DAL.pdb
+C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookATableMVC\BookATable.Service\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookATableMVC\BookATable.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookATableMVC\BookATable.Service\obj\Debug\BookATable.Service.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookATableMVC\BookATable.Service\obj\Debug\BookATable.Service.dll
+C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookATableMVC\BookATable.Service\obj\Debug\BookATable.Service.pdb

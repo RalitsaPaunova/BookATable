@@ -1,0 +1,46 @@
+﻿@model BookATableMVC.ViewModels.Users.UserListViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Edit")
+</p>
+<table class="table">
+    <tr>
+        <th>User</th>
+        <th>Name</th>
+        <th>Password</th>
+        <th>Phone</th>
+        <th>Roles</th>
+    </tr>
+
+    @foreach (var item in Model.Items) {
+    <tr>
+        <td>@item.Email</td>
+        <td>@item.Name</td>
+        <td>@item.Password</td>
+        <td>@item.Phone</td>
+        <td>
+            @{
+            foreach (var role in item.Roles)
+                {
+                    @role.Id @:  @role.Name <br />
+
+
+                }
+            }
+        </td>
+
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>

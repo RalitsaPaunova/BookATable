@@ -1,0 +1,84 @@
+﻿@model System.Object
+
+@{
+    string controller = this.ViewContext.RouteData.Values["controller"].ToString();
+    string action = this.ViewContext.RouteData.Values["action"].ToString();
+    string namePrefix = Model.GetType().GetProperty("Prefix").GetValue(Model, null).ToString();
+    string idPrefix = namePrefix.Replace(".", "_");
+    var parentPager = (BookATableMVC.ViewModels.PagerViewModel)Model.GetType().GetProperty("ParentPager").GetValue(Model, null);
+
+    var editableProperties = new Dictionary<System.Reflection.PropertyInfo, string>();
+
+    foreach (System.Reflection.PropertyInfo pi in Model.GetType().GetProperties())
+    {
+        object obj = pi.GetCustomAttributes(false).FirstOrDefault(a => a is BookATableMVC.Tools.FilterPropertyAttribute);
+        if (obj != null)
+        {
+            BookATableMVC.Tools.FilterPropertyAttribute attrib = (BookATableMVC.Tools.FilterPropertyAttribute)obj;
+            editableProperties.Add(pi, attrib.DisplayName);
+        }
+    }
+}
+<div style="text-align:center;">
+    <form action="/@controller/@action/" method="get" class="col-lg-12 form-inline">
+
+        @foreach (string key in this.Request.QueryString.Keys)
+        {
+            if (!key.StartsWith(namePrefix) && key != parentPager.Prefix + "CurrentPage")
+            {
+                @Html.Hidden(key, this.Request.QueryString[key]);
+            }
+        }
+        @foreach (var kvp in this.ViewContext.RouteData.Values)
+        {
+            if (kvp.Key != "controller" && kvp.Key != "action" && kvp.Key != parentPager.Prefix + "CurrentPage" && !kvp.Key.StartsWith(namePrefix))
+            {
+                @Html.Hidden(kvp.Key, kvp.Value);
+            }
+        }
+
+        <p>
+            @foreach (var kvp in editableProperties)
+            {
+                if (@kvp.ToString().Contains("String"))
+                {
+                    <div class="col-lg-4 form-inline">
+                        <div class="form-inline">
+                            @Html.Label(idPrefix + kvp.Key.Name, kvp.Value)
+                        </div>
+                        <div>@Html.TextBox(namePrefix + kvp.Key.Name, kvp.Key.GetValue(Model, null), new { @class = "form-control", })</div>
+
+                    </div>
+
+
+                }
+
+                else if (@kvp.ToString().Contains("DateTime"))
+                {
+                    <div class="col-lg-4 form-inline">
+                        <div class="form-inline">
+                            @Html.Label(idPrefix + kvp.Key.Name, kvp.Value)
+                        </div>
+                        <div>
+                            @Html.TextBox(namePrefix + kvp.Key.Name, kvp.Key.GetValue(Model, null), new { @class = "timepicker-default input-small form-control", })
+                        </div>
+                    </div>
+                }
+                else if (@kvp.ToString().Contains("Int"))
+                {
+                    <div class="form-inline col-lg-4">
+                        <div class="form-inline">
+                            @Html.Label(idPrefix + kvp.Key.Name, kvp.Value)
+                        </div>
+                        <div>
+                            @Html.TextBox(namePrefix + kvp.Key.Name, kvp.Key.GetValue(Model, null), new { @class = "form-control", })
+                        </div>
+
+                    </div>
+                }
+            }
+
+            <input type="submit" style="margin:30px 0 0 14px" class="btn btn-default" value="Search" />
+        </p>
+    </form>
+</div>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookATableMVC", "BookATableMVC\BookATableMVC.csproj", "{51F53586-B61D-4C62-AEF4-9DB295E17918}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{3D698D95-4ED6-44D0-A311-418A777CD04F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookATable.Service", "BookATable.Service\BookATable.Service.csproj", "{9CE9A103-8D75-4810-B364-51FEAD90F7A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51F53586-B61D-4C62-AEF4-9DB295E17918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F53586-B61D-4C62-AEF4-9DB295E17918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F53586-B61D-4C62-AEF4-9DB295E17918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F53586-B61D-4C62-AEF4-9DB295E17918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D698D95-4ED6-44D0-A311-418A777CD04F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D698D95-4ED6-44D0-A311-418A777CD04F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D698D95-4ED6-44D0-A311-418A777CD04F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D698D95-4ED6-44D0-A311-418A777CD04F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE9A103-8D75-4810-B364-51FEAD90F7A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE9A103-8D75-4810-B364-51FEAD90F7A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE9A103-8D75-4810-B364-51FEAD90F7A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE9A103-8D75-4810-B364-51FEAD90F7A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
