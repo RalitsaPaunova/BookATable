@@ -30,7 +30,7 @@ namespace BookATableMVC.ViewModels.Restaurants
 
         public override Expression<Func<Restaurant, bool>> BuildFilter()
         {
-            return (a =>//(a.ManagerId == AthenticationService.LoggedUser.Id ) &&
+            return (a =>(a.ManagerId == AthenticationService.LoggedUser.Id ) &&
                   ((a.Name.Contains(this.Name) || String.IsNullOrEmpty(this.Name))) &&
                   ((a.Address.Contains(this.Address) || String.IsNullOrEmpty(this.Address))) &&
                   ((a.Email.Contains(this.Email) || String.IsNullOrEmpty(this.Email))) &&

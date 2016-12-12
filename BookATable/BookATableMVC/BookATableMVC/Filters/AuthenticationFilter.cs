@@ -15,7 +15,7 @@ namespace BookATableMVC.Filters
             if (AthenticationService.LoggedUser == null)
             {
                 filterContext.HttpContext.Response.Redirect("~/Accounts/Login?redirectUrl=" + filterContext.HttpContext.Request.Url);
-                filterContext.Result = new EmptyResult();              
+                //filterContext.Result = new EmptyResult();              
             }
         }
     }

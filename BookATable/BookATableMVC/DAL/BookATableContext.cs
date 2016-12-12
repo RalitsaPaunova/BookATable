@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL.Entites;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace DAL
 {
@@ -24,6 +25,12 @@ namespace DAL
         {
           
             modelBuilder.Properties<DateTime>().Configure(c => c.HasColumnType("datetime2"));
+            //modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
+
+            //modelBuilder.Entity<AuthAction>()
+            //   .HasRequired(f => f.Id)
+            //   .WithRequiredDependent()
+            //   .WillCascadeOnDelete(false);
         }
     }
 }

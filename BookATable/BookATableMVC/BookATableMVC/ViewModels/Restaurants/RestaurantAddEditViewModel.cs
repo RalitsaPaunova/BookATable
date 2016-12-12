@@ -20,6 +20,7 @@ namespace BookATableMVC.ViewModels.Restaurants
         [Required]
         [Range(1, Int32.MaxValue)]
         public int Capacity { get; set; }
+        public int? ManagerId { get; set; }
         //[Required]
         [DataType(DataType.Time)]
         [DisplayFormat(DataFormatString = "{0:HH:mm}", ApplyFormatInEditMode = true)]

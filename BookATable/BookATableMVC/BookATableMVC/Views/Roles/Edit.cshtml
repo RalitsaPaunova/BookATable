@@ -23,20 +23,21 @@
             </div>
         </div>
         <div class="form-group">
-            <h3>Actions</h3>
-            <div id="roles-container">
-               
-                    
-                    @foreach (var action in Model.AuthActions)
-                    {
-                        <div>
-                            <input type="checkbox" name="SelectedActions" value="@action.Value" id="@action.Value" @Html.Raw(action.Selected ? "checked" : string.Empty) />
-                            <label for="@action.Value">@action.Text</label>
-                        </div>
-                    }
-               
-               
+            <h3>Actions/Controllers</h3>
+            <div id="roles-container" class="col-md-10">
+
+
+                @foreach (var action in Model.AuthActions)
+                {
+                    <div>
+                        <input type="checkbox" name="SelectedActions" value="@action.Value" id="@action.Value" @Html.Raw(action.Selected ? "checked" : string.Empty) />
+                        <label for="@action.Value">@action.Text</label>
+                    </div>
+                }
+
+
             </div>
+
         </div>
 
         <div class="form-group">

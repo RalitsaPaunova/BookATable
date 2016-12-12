@@ -26,7 +26,7 @@ namespace BookATable.Service.EntityServices
             .GetAll()
             .Select(a => new SelectItem
             {
-                Text = a.Name+" ["+a.MethodType+"]",
+                Text = a.Name+" ["+a.MethodType+"]" + " " + a.AuthController.Name,
                 Value = a.Id.ToString(),
                 Selected = actions.Any(ar => ar.Id == a.Id)
             })

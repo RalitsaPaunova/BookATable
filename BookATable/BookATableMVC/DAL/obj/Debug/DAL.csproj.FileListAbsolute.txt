@@ -48,3 +48,13 @@ C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\DAL\bin\Debug\EntityFr
 C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\DAL\obj\Debug\DAL.dll
 C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\Lenovo G530\Desktop\BATProject\BookATable\BookATable\BookATableMVC\DAL\bin\Debug\DAL.dll.config
+C:\Users\Lenovo G530\Desktop\BATProject\BookATable\BookATable\BookATableMVC\DAL\bin\Debug\DAL.dll
+C:\Users\Lenovo G530\Desktop\BATProject\BookATable\BookATable\BookATableMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\Lenovo G530\Desktop\BATProject\BookATable\BookATable\BookATableMVC\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo G530\Desktop\BATProject\BookATable\BookATable\BookATableMVC\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo G530\Desktop\BATProject\BookATable\BookATable\BookATableMVC\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo G530\Desktop\BATProject\BookATable\BookATable\BookATableMVC\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo G530\Desktop\BATProject\BookATable\BookATable\BookATableMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo G530\Desktop\BATProject\BookATable\BookATable\BookATableMVC\DAL\obj\Debug\DAL.dll
+C:\Users\Lenovo G530\Desktop\BATProject\BookATable\BookATable\BookATableMVC\DAL\obj\Debug\DAL.pdb

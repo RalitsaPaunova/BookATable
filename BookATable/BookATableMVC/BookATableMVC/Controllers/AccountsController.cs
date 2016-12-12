@@ -8,9 +8,11 @@ using DAL.Entites;
 using BookATableMVC.Services.EntityServices;
 using BookATableMVC.Helper;
 using BookATableMVC.Filters;
+using BookATable.Service.EntityServices;
 
 namespace BookATableMVC.Controllers
 {
+    
     public class AccountsController : Controller
     {
         // GET: Accounts
@@ -37,7 +39,6 @@ namespace BookATableMVC.Controllers
             user.Password = model.Password;
             user.Name = model.Name;
             user.Phone = model.Phone;
-
             UserService service = new UserService();
             service.Save(user);
 
@@ -74,6 +75,9 @@ namespace BookATableMVC.Controllers
             u.Phone = model.Phone;
             if (model.Password==u.Password)
             {
+                //RoleService roleService = new RoleService();
+                //Role userRole = roleService.GetById(4);
+                //u.Roles.Add(userRole);
                 u.IsVerify = true;
                 usersService.Save(u);
                 return RedirectToAction("Login", "Accounts");

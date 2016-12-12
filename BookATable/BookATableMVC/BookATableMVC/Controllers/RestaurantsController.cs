@@ -11,6 +11,7 @@ using BookATableMVC.Helper.EntityServices;
 using BookATableMVC.ViewModels;
 using BookATableMVC.Filters;
 using BookATableMVC.Services.EntityServices;
+using BookATableMVC.Helper;
 
 namespace BookATableMVC.Controllers
 {
@@ -41,6 +42,7 @@ namespace BookATableMVC.Controllers
             model.Address = restorant.Address;
             model.Phone = restorant.Phone;
             model.Email = restorant.Email;
+            model.ManagerId = AthenticationService.LoggedUser.Id;
             model.Capacity = restorant.Capacity;
             model.OpenHour = restorant.OpenHour;
             model.CloseHour = restorant.CloseHour;
@@ -55,6 +57,7 @@ namespace BookATableMVC.Controllers
             restorant.Phone = model.Phone;
             restorant.Email = model.Email;
             restorant.Capacity = model.Capacity;
+            restorant.ManagerId = AthenticationService.LoggedUser.Id;
             restorant.OpenHour = model.OpenHour;
             restorant.CloseHour = model.CloseHour;
             if (model.ImageUpload != null && model.ImageUpload.ContentLength > 0)

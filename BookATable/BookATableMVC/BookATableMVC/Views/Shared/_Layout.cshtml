@@ -29,12 +29,31 @@
 
                 @if (BookATableMVC.Helper.AthenticationService.LoggedUser != null)
                 {
-                    @Html.ActionLink("Reservations", "Index", "Reservations", null, new { @class = "navbar-brand" })
-                    @Html.ActionLink("Restaurants", "Index", "Restaurants", null, new { @class = "navbar-brand" })
+                    List<DAL.Entites.Role> userRoles = BookATableMVC.Helper.AthenticationService.LoggedUser.Roles;
+                
+                    foreach (var item in userRoles)
+	                {
+		                if (item.Name == "Administrator")
+	                    {
+		                    @Html.ActionLink("Reservations", "Index", "Reservations", null, new { @class = "navbar-brand" })
+                            @Html.ActionLink("Restaurants", "Index", "Restaurants", null, new { @class = "navbar-brand" })
+                            @Html.ActionLink("Users", "Index", "User", null, new { @class = "navbar-brand" })
+                            @Html.ActionLink("Roles", "Index", "Roles", null, new { @class = "navbar-brand" })
+	                    }
+                        else if (item.Name == "Manager")
+	                    {
+		                   @Html.ActionLink("Restaurants", "Index", "Restaurants", null, new { @class = "navbar-brand" })
+	                    }
+                        else
+	                    {
+                            @Html.ActionLink("Reservations", "Index", "Reservations", null, new { @class = "navbar-brand" })
+	                    }
+
+	                }
+
                     <div class="container topnav">
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
-                                <li> @Html.ActionLink("Settings", "Edit", "User", null, new { @class = "navbar-brand pull-right" })</li>
                                 <li>@Html.ActionLink("Logout", "Logout", "Accounts", null, new { @class = "navbar-brand pull-right" })</li>
                             </ul>
                         </div>
@@ -46,7 +65,7 @@
                     @if (BookATableMVC.Helper.AthenticationService.LoggedUser == null)
                     {
                         <li>@Html.ActionLink("Register", "Register", "Accounts", null, new { @class = "navbar-brand pull-right" })</li>
-                                    <li> @Html.ActionLink("Login", "Login", "Accounts", null, new { @class = "navbar-brand pull-right" })</li>
+                        <li> @Html.ActionLink("Login", "Login", "Accounts", null, new { @class = "navbar-brand pull-right" })</li>
                     }
                 </ul>
             </div>

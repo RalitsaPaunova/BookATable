@@ -13,11 +13,10 @@ namespace BookATableMVC.App_Start
     {
         public static void Load()
         {
-            using (UnitOfWork uow = new UnitOfWork())
-            {
+            
                 var assembly = Assembly.GetExecutingAssembly();
-                var authControllerRepo = new AuthControllerRepository(uow);
-                var authActionRepo = new AuthActionRepository(uow);
+                var authControllerRepo = new AuthControllerRepository();
+                var authActionRepo = new AuthActionRepository();
 
                 var controllersInAssembly = new List<AuthController>();
 
@@ -92,6 +91,5 @@ namespace BookATableMVC.App_Start
                 controllersInAssembly.ForEach(c => authControllerRepo.Save(c));
             }
         }
-    }
 }
 
