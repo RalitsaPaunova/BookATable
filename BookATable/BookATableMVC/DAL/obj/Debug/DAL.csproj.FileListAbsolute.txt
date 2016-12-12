@@ -38,3 +38,13 @@ E:\Уни\github\BookATable\BookATableMVC\DAL\bin\Debug\EntityFramework.SqlServe
 E:\Уни\github\BookATable\BookATableMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 E:\Уни\github\BookATable\BookATableMVC\DAL\obj\Debug\DAL.dll
 E:\Уни\github\BookATable\BookATableMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\DAL\bin\Debug\DAL.dll.config
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\DAL\bin\Debug\DAL.dll
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\DAL\bin\Debug\EntityFramework.dll
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\DAL\bin\Debug\EntityFramework.xml
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\DAL\obj\Debug\DAL.dll
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\DAL\obj\Debug\DAL.pdb

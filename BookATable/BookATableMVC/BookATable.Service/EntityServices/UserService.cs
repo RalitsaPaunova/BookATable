@@ -22,7 +22,7 @@ namespace BookATableMVC.Services.EntityServices
         }
         public User GetByGuid(string guid)
         {
-            return GetAll().FirstOrDefault(u => u.Password == guid);
+            return GetAll().FirstOrDefault(u => u.Email == guid);
         }
         public List<SelectItem> GetSelectedRoles(List<Role> roles)
         {

@@ -26,7 +26,7 @@ namespace BookATableMVC.Controllers
         [HttpPost]
         public ActionResult Register(UserAddEditViewModel model)
         {
-            model.Password = Guid.NewGuid().ToString();
+            model.Email = Guid.NewGuid().ToString();
             TryUpdateModel(model);
             if (!ModelState.IsValid)
             {
@@ -43,7 +43,7 @@ namespace BookATableMVC.Controllers
 
             EmailService.SendRegistrationEmail(user);
 
-            return View(model);
+            return View("SuccessfulRegister");
         }
         public ActionResult Verify(string guid)
         {

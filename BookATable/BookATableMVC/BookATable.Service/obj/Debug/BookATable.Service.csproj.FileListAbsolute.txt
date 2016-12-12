@@ -42,3 +42,14 @@ E:\Уни\github\BookATable\BookATableMVC\BookATable.Service\bin\Debug\EntityFra
 E:\Уни\github\BookATable\BookATableMVC\BookATable.Service\obj\Debug\BookATable.Service.csprojResolveAssemblyReference.cache
 E:\Уни\github\BookATable\BookATableMVC\BookATable.Service\obj\Debug\BookATable.Service.dll
 E:\Уни\github\BookATable\BookATableMVC\BookATable.Service\obj\Debug\BookATable.Service.pdb
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\BookATable.Service\bin\Debug\BookATable.Service.dll
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\BookATable.Service\bin\Debug\BookATable.Service.pdb
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\BookATable.Service\bin\Debug\DAL.dll
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\BookATable.Service\bin\Debug\EntityFramework.dll
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\BookATable.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\BookATable.Service\bin\Debug\DAL.pdb
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\BookATable.Service\bin\Debug\EntityFramework.xml
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\BookATable.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\BookATable.Service\obj\Debug\BookATable.Service.csprojResolveAssemblyReference.cache
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\BookATable.Service\obj\Debug\BookATable.Service.dll
+C:\Users\User\proekt\BookATable2\BookATable\BookATableMVC\BookATable.Service\obj\Debug\BookATable.Service.pdb

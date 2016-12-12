@@ -68,6 +68,17 @@
         <dd>
             @Html.DisplayFor(model => model.CloseHour)
         </dd>
+        <br />
+        <dt>
+            @Html.DisplayNameFor(model => model.ImagePath):
+        </dt>
+        <dd>
+            <div class="photo">
+                <div class="center">
+                    <img class="photo" src="~/Uploads/@Model.ImagePath" alt="Image" width="200" height="200" />
+                </div>
+            </div>
+        </dd>
 
 
 

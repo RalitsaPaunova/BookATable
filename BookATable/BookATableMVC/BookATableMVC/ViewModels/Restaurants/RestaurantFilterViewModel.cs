@@ -21,22 +21,22 @@ namespace BookATableMVC.ViewModels.Restaurants
         [FilterProperty(DisplayName = "Capacity")]
         public int Capacity { get; set; }
         [FilterProperty(DisplayName = "Open Hour")]
-        [DisplayFormat(DataFormatString = "{0:HH:mm}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{HH:mm}", ApplyFormatInEditMode = true)]
         public DateTime? OpenHour { get; set; }
         [FilterProperty(DisplayName = "Close Hour")]
-        [DisplayFormat(DataFormatString = "{0:HH:mm}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{HH:mm}", ApplyFormatInEditMode = true)]
         public DateTime? CloseHour { get; set; }
 
 
         public override Expression<Func<Restaurant, bool>> BuildFilter()
         {
-            return (a =>(a.ManagerId == AthenticationService.LoggedUser.Id ) &&
+            return (a =>//(a.ManagerId == AthenticationService.LoggedUser.Id ) &&
                   ((a.Name.Contains(this.Name) || String.IsNullOrEmpty(this.Name))) &&
                   ((a.Address.Contains(this.Address) || String.IsNullOrEmpty(this.Address))) &&
                   ((a.Email.Contains(this.Email) || String.IsNullOrEmpty(this.Email))) &&
                   (a.Capacity == this.Capacity || this.Capacity == default(int)) &&
-                  (a.OpenHour.Value == this.OpenHour.Value || this.OpenHour == null) &&
-                  (a.CloseHour.Value == this.CloseHour.Value || this.CloseHour == null));
+                  (a.OpenHour.Value.Hour == this.OpenHour.Value.Hour || this.OpenHour == null) &&
+                  (a.CloseHour.Value.Hour == this.CloseHour.Value.Hour || this.CloseHour == null));
         }
     }
 }

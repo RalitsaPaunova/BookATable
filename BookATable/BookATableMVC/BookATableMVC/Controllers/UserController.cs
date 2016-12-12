@@ -31,6 +31,7 @@ namespace BookATableMVC.Controllers
                 model.Name = entity.Name;
                 model.Password = entity.Password;
                 model.Phone = entity.Phone;
+                model.IsVerify = entity.IsVerify;
                 UserService service = new UserService(uow);
                 model.Roles = SelectListItemMapper.Map(service.GetSelectedRoles(entity.Roles));
  
@@ -46,7 +47,7 @@ namespace BookATableMVC.Controllers
                 entity.Password = model.Password;
                 entity.Name = model.Name;
                 entity.Phone = model.Phone;
-                entity.IsVerify = true;
+                entity.IsVerify = model.IsVerify;
                 UserService service = new UserService(uow);
                 entity.Roles = service.GetUpdatedUserRoles(entity.Roles, model.SelectedRoles); 
             }

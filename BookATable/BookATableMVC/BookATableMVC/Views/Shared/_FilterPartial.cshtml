@@ -59,9 +59,17 @@
                         <div class="form-inline">
                             @Html.Label(idPrefix + kvp.Key.Name, kvp.Value)
                         </div>
+                      @if (controller=="Reservations")
+                        {
                         <div>
-                            @Html.TextBox(namePrefix + kvp.Key.Name, kvp.Key.GetValue(Model, null), new { @class = "timepicker-default input-small form-control", })
+                            @Html.TextBox(namePrefix + kvp.Key.Name, kvp.Key.GetValue(Model, null), new { @class = "dateTimePicker form-control", @id = "datetimepicker" })
                         </div>
+                        }
+                      else { 
+                        <div>
+                            @Html.TextBox(namePrefix + kvp.Key.Name, kvp.Key.GetValue(Model, null), new { @class = "form-control" })
+                        </div>
+                      }
                     </div>
                 }
                 else if (@kvp.ToString().Contains("Int"))

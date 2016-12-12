@@ -19,7 +19,7 @@ namespace BookATableMVC.Helper
             mail.Body = "Hello " + u.Name + Environment.NewLine
                 + "Thank you for registering. Confirm your registration by visiting the following link: "
                 + Environment.NewLine
-                + "http://localhost:" + HttpContext.Current.Request.Url.Port + "/Accounts/Verify?guid=" + u.Password;
+                + "http://localhost:" + HttpContext.Current.Request.Url.Port + "/Accounts/Verify?guid=" + u.Email;
 
             SmtpClient smtp = new SmtpClient("smtp.live.com", 25);
             smtp.EnableSsl = true;
