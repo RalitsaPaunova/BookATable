@@ -18,15 +18,16 @@ namespace BookATableMVC.Controllers
     [AuthenticationFilter]
     public class RestaurantsController : BaseController<Restaurant,RestaurantFilterViewModel ,RestaurantListViewModel, RestaurantAddEditViewModel>
     {
-        // GET: Restaurants
-        //public ActionResult Index(string searchString, string sortOrder,int? page)
-        //{            
-        //    RestaurantListViewModel model = new RestaurantListViewModel();
-        //    model.Restaurants = new RestaurantService().GetAll().ToList();          
+        public ActionResult Details(int? id)
+        {
 
-        //    return View(model);
+            Restaurant restaurant = new Restaurant();
+            RestaurantService service = new RestaurantService();
+            restaurant = service.GetById(id.Value);
 
-        //}
+            return View(restaurant);
+
+        }
         protected override BaseService<Restaurant> CreateService()
         {
             return new RestaurantService();
@@ -55,6 +56,26 @@ namespace BookATableMVC.Controllers
             restorant.Capacity = model.Capacity;
             restorant.OpenHour = model.OpenHour;
             restorant.CloseHour = model.CloseHour;
+            if (model.ImageUpload != null && model.ImageUpload.ContentLength > 0)
+            {
+                var imageExtension = Path.GetExtension(model.ImageUpload.FileName);
+
+                if (String.IsNullOrEmpty(imageExtension) || !imageExtension.Equals(".jpg", StringComparison.OrdinalIgnoreCase))
+                {
+                    ModelState.AddModelError(string.Empty, "Wrong image format.");
+                }
+                else
+                {
+                    string filePath = Server.MapPath("~/Uploads/");
+                    model.ImagePath = model.ImageUpload.FileName;
+                    model.ImageUpload.SaveAs(filePath + model.ImagePath);
+                }
+            }
+            else
+            {
+                model.ImagePath = "default.jpg";
+            }
+            restorant.ImagePath = model.ImagePath;
         }
         //[AuthenticationFilter]
         //    //GET Action

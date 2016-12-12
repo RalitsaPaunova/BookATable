@@ -10,23 +10,15 @@
     <tr>
     <tr>
         <th>Name</th>
-        <th>Address</th>
-        <th>Email</th>
-        <th>Phone</th>
-        <th>Capacity</th>
         <th>Open Hour</th>
         <th>Close Hour</th>
-        <th>Image</th>
         <th>Actions</th>
     </tr>
     @foreach (var item in Model.Items)
     {
         <tr>
             <td>@item.Name</td>
-            <td>@item.Address</td>
-            <td>@item.Email</td>
-            <td>@item.Phone</td>
-            <td>@item.Capacity</td>
+
             @if (item.OpenHour.HasValue && item.CloseHour.HasValue)
             {
                 <td>@item.OpenHour.Value.ToShortTimeString()</td>
@@ -37,6 +29,7 @@
                     <div class="center">
 
                         <img class="photo" src="~/Uploads/@item.ImagePath" alt="Image" width="200" height="200" />
+
                     </div>
                 </div>
             </td>

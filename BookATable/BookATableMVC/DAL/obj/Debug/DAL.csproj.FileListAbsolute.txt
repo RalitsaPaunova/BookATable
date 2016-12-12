@@ -28,3 +28,13 @@ C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookA
 C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookATableMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookATableMVC\DAL\obj\Debug\DAL.dll
 C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookATableMVC\DAL\obj\Debug\DAL.pdb
+E:\Уни\github\BookATable\BookATableMVC\DAL\bin\Debug\DAL.dll.config
+E:\Уни\github\BookATable\BookATableMVC\DAL\bin\Debug\DAL.dll
+E:\Уни\github\BookATable\BookATableMVC\DAL\bin\Debug\DAL.pdb
+E:\Уни\github\BookATable\BookATableMVC\DAL\bin\Debug\EntityFramework.dll
+E:\Уни\github\BookATable\BookATableMVC\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Уни\github\BookATable\BookATableMVC\DAL\bin\Debug\EntityFramework.xml
+E:\Уни\github\BookATable\BookATableMVC\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Уни\github\BookATable\BookATableMVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Уни\github\BookATable\BookATableMVC\DAL\obj\Debug\DAL.dll
+E:\Уни\github\BookATable\BookATableMVC\DAL\obj\Debug\DAL.pdb

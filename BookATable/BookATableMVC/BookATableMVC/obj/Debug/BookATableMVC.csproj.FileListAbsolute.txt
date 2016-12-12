@@ -100,3 +100,38 @@ C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookA
 C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookATableMVC\BookATableMVC\obj\Debug\BookATableMVC.csprojResolveAssemblyReference.cache
 C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookATableMVC\BookATableMVC\obj\Debug\BookATableMVC.dll
 C:\Users\Lenovo G530\Desktop\EventDrivenProject\BookATableMVC\book-a-table\BookATableMVC\BookATableMVC\obj\Debug\BookATableMVC.pdb
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\BookATableMVC.dll.config
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\BookATableMVC.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\BookATableMVC.pdb
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\Antlr3.Runtime.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\BookATable.Service.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\DAL.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\Microsoft.Web.Infrastructure.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\Newtonsoft.Json.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\System.Web.Helpers.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\System.Web.Mvc.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\System.Web.Mvc.Expressions.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\System.Web.Optimization.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\System.Web.Razor.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\System.Web.Webpages.Deployment.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\System.Web.Webpages.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\System.Web.Webpages.Razor.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\WebGrease.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\EntityFramework.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\EntityFramework.SqlServer.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\BookATable.Service.pdb
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\DAL.pdb
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\Antlr3.Runtime.pdb
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\Newtonsoft.Json.xml
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\System.Web.Optimization.xml
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\System.Web.Razor.xml
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\System.Web.Webpages.xml
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\System.Web.Webpages.Deployment.xml
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\System.Web.Webpages.Razor.xml
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\System.Web.Helpers.xml
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\System.Web.Mvc.xml
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\EntityFramework.xml
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\bin\EntityFramework.SqlServer.xml
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\obj\Debug\BookATableMVC.csprojResolveAssemblyReference.cache
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\obj\Debug\BookATableMVC.dll
+E:\Уни\github\BookATable\BookATableMVC\BookATableMVC\obj\Debug\BookATableMVC.pdb

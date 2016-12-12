@@ -10,7 +10,7 @@ namespace DAL
 {
     public class BookATableContext:DbContext
     {
-        public BookATableContext():base("BookATableMVCDB12")
+        public BookATableContext():base("BookATableMVCDB123")
         {
             var ensureDLLIsCopied = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
         }

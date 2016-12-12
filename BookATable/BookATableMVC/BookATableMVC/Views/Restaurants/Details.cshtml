@@ -1,0 +1,79 @@
+﻿@model DAL.Entites.Restaurant
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <br />
+        <dt>
+            @Html.DisplayNameFor(model => model.Address):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <br />
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+        <br />
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <br />
+        <dt>
+            @Html.DisplayNameFor(model => model.Capacity):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Capacity)
+        </dd>
+        <br />
+        <dt>
+            @Html.DisplayNameFor(model => model.OpenHour):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OpenHour)
+        </dd>
+        <br />
+        <dt>
+            @Html.DisplayNameFor(model => model.CloseHour):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CloseHour)
+        </dd>
+
+
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index", new { @class = " btn-lg btn-block" })
+</p>

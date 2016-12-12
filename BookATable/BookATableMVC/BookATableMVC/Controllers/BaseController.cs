@@ -13,8 +13,8 @@ using BookATableMVC.Filters;
 
 namespace BookATableMVC.Controllers
 {
-    [AuthenticationFilter]
-    [AuthorizationFilter]
+    //[AuthenticationFilter]
+    //[AuthorizationFilter]
     public abstract class BaseController<T, FilterVM, LVM, BID> : Controller 
         where T : BaseEntity, new()
         where FilterVM : BaseFilterViewModel<T>, new()
